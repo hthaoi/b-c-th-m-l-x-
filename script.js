@@ -1,4 +1,3 @@
-// Hàm bốc thăm
 function drawPrize() {
     const name = document.getElementById("name").value;
     
@@ -7,9 +6,7 @@ function drawPrize() {
         return;
     }
 
-    // Tạo số ngẫu nhiên từ 25 đến 55
     const prize = Math.floor(Math.random() * (55 - 25 + 1)) + 25;
 
-    // Hiển thị kết quả
-    document.getElementById("result").innerHTML = `${name} đã bốc thăm và nhận được: <strong>${prize} đồng</strong>`;
+    document.getElementById("result").innerHTML = `chúc mừng ${name} sẽ nhận được: <strong>${prize} đồng</strong>`;
 }
